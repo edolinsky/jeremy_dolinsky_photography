@@ -40,21 +40,6 @@ layout: default
                     <p>{{ site.footer.github }}</p>
                 </section>
                 <section>
-                    <h2>Sponsor</h2>
-                    <div class="ad">
-                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                        <ins class="adsbygoogle"
-                             style="display:block; text-align:center;"
-                             data-ad-layout="in-article"
-                             data-ad-format="fluid"
-                             data-ad-client="ca-pub-1702577941194110"
-                             data-ad-slot="9823584598"></ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                    </div>
-                </section>
-                <section>
                     <h2>Follow me on ...</h2>
                     <ul class="icons">
                         <li><a href="{{ site.social_urls.facebook }}" class="icon fa-facebook"><span
@@ -66,7 +51,7 @@ layout: default
                         <li><a href="{{ site.social_urls.instagram }}" class="icon fa-instagram"><span
                                 class="label">Instagram</span></a>
                         </li>
-                        <li><a href="{{ site.social_urls.dribbble }}" class="icon fa-dribbble"><span
+                        <!--<li><a href="{{ site.social_urls.dribbble }}" class="icon fa-dribbble"><span
                                 class="label">Dribbble</span></a>
                         </li>
                         <li><a href="{{ site.social_urls.github }}" class="icon fa-github"><span
@@ -74,22 +59,22 @@ layout: default
                         </li>
                         <li><a href="{{ site.social_urls.linkedin }}" class="icon fa-linkedin"><span
                                 class="label">LinkedIn</span></a>
-                        </li>
+                        </li>-->
                     </ul>
                 </section>
                 <p class="copyright">
-                    &copy; {{ site.author }}. Design: {{ site.web_design }}
+                    &copy; {{ site.author }}.
                 </p>
             </div>
             <div>
                 <section>
                     <h2>Get in touch</h2>
-                    <form method="post" action="#">
+                    <form method="post" action="https://formspree.io/jeremy.dolinsky@gmail.com">
                         <div class="field half first">
                             <input type="text" name="name" id="name" placeholder="Name"/>
                         </div>
                         <div class="field half">
-                            <input type="text" name="email" id="email" placeholder="Email"/>
+                            <input type="text" name="_replyto" id="_replyto" placeholder="Email"/>
                         </div>
                         <div class="field">
                             <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
@@ -98,6 +83,7 @@ layout: default
                             <li><input type="submit" value="Send" class="special"/></li>
                             <li><input type="reset" value="Reset"/></li>
                         </ul>
+                        <input type="text" name="_gotcha" style="display:none" />
                     </form>
                 </section>
             </div>
